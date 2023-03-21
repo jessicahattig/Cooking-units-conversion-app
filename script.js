@@ -1,10 +1,11 @@
 // buisness logic
-function grams(ounces,pound) {
-  return ounces * (28.35) + pounds * (453.6);
+function milliliters(tsp,tbsp,cups) {
+  return tsp * (4.929) + tbsp * (14.787) + cups * (236.6)
 }
 
 // user interface logic
-const ounces = parseInt(prompt("Enter ounces:"));
-const pounds = parseInt(prompt("Enter pounds:"));
+const tsp = parseInt(prompt("Enter teaspoons:"));
+const tbsp = parseInt(prompt("Enter tablespoons:"));
+const cups = parseInt(prompt("Enter cups:"));
 
-window.alert(grams(ounces,pounds));
+window.alert(milliliters(tsp,tbsp,cups));
